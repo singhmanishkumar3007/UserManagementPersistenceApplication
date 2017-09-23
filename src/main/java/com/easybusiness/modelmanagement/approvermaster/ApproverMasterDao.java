@@ -28,6 +28,7 @@ public class ApproverMasterDao {
     @Autowired
     UserDao userDao;
 
+	
 
     @Transactional(readOnly = true)
     public List<ApproverMaster> findAll() throws Exception {
