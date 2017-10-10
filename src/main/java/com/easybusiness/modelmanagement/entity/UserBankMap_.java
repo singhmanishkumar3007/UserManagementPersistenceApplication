@@ -17,6 +17,7 @@ public abstract class UserBankMap_ {
 	public static volatile SingularAttribute<UserBankMap, User> user;
 	public static volatile SingularAttribute<UserBankMap, Branch> branch;
 	public static volatile SingularAttribute<UserBankMap, String> ifscCode;
+	public static volatile SingularAttribute<UserBankMap, String> accountType;
 
 }
 

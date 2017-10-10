@@ -50,6 +50,9 @@ public class UserBankMap implements Serializable {
 
     @Column(name = "MOD_ON")
     private Date modifiedOn;
+    
+    @Column(name = "ACCOUNT_TYPE")
+    private String accountType;
 
     public UserBankMap() {
 	super();
@@ -119,11 +122,20 @@ public class UserBankMap implements Serializable {
 	this.modifiedOn = modifiedOn;
     }
 
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+
     @Override
     public String toString() {
 	return "UserBankMap [id=" + id + ", user=" + user + ", bank=" + bank + ", branch=" + branch + ", accountNum="
 		+ accountNum + ", ifscCode=" + ifscCode + ", modifiedBy=" + modifiedBy + ", modifiedOn=" + modifiedOn
-		+ "]";
+		+ ", accountType=" + accountType + "]";
     }
+
 
 }
